@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap')
+
+
+// Text
+$very-dark-desaturated-blue: hsl(238, 29%, 16%)
+$soft-red: hsl(14, 88%, 65%)
+
+// Background gradient:
+$soft-violet: hsl(273, 75%, 66%)
+$soft-blue: hsl(240, 73%, 65%)
+
+// Text
+$very-dark-grayish-blue: hsl(237, 12%, 33%)
+$dark-grayish-blue: hsl(240, 6%, 50%)
+
+// Dividers
+$light-grayish-blue: hsl(240, 5%, 91%)
+
+.attribution 
+    // font-size: 14px
+    margin: 2rem 0
+    text-align: center
+    a
+        text-decoration: none
+        font-weight: 700
+        color: darken($soft-red, 20%)
+        transition: color 300ms ease-in
+        &:hover
+            color: $soft-red
+
+*, *::before, *::after
+    margin: 0
+    padding: 0
+    box-sizing: inherit
+
+body
+    box-sizing: border-box
+    font-family: 'Kumbh Sans', sans-serif
+    font-size: 100%
+
+main
+    height: 100vh
+    width: 100%
+    background: linear-gradient($soft-violet, $soft-blue)
+    display: grid
+    place-items: center
+    overflow: hidden
+    .container
+        position: relative
+        display: flex
+        justify-content: space-between
+        margin: 2rem 0
+        width: 80%
+        min-height: 550px
+        max-height: 550px
+        max-width: 1440px
+        background: white
+        border-radius: 2rem
+
+.images-container
+    width: 50%
+    overflow: hidden
+    .woman-desktop
+        position: relative
+        top: 15%
+        left: -80px
+    .bg-desktop
+        position: absolute
+        top: -275px
+        left: -580px
+    .image-container__box
+        position: absolute
+        top: 40%
+        left: -90px
+        z-index: 2
+    .woman-mobile
+        display: none
+    .bg-mobile
+        display: none
+
+.text-container
+    width: 50%
+    padding: 3rem 2rem
+    h1
+        padding-bottom: 2rem
+        color: $very-dark-desaturated-blue
+    .question-answers__container
+        .question-answer__container
+            margin: 2rem 0
+            padding-bottom: 1rem
+            border-bottom: 1px solid $light-grayish-blue
+            color: $dark-grayish-blue
+            user-select: none
+            .question
+                display: flex
+                justify-content: space-between
+                cursor: pointer
+                p
+                    color: $very-dark-grayish-blue
+                    font-weight: 700
+                    transition: color 300ms ease-in
+                img
+                    width: 15px
+                    height: 15px
+                    transition: transform 300ms linear
+            .answer
+                display: none
+                font-weight: 400
+        // .question-answer__container:nth-of-type(1)
+        //     .question
+        //         p
+        //             color: $very-dark-desaturated-blue
+        //         img
+        //             transform: rotate(180deg)
+        //     .answer
+        //         padding-top: 1rem
+        //         display: block
