@@ -141,4 +141,17 @@ main .container {
   display: none;
   font-weight: 400;
 }
+
+.display-block {
+  display: block !important;
+}
+
+.active-state {
+  color: #1d1e35 !important;
+}
+
+.rotate {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
 /*# sourceMappingURL=style.css.map */
