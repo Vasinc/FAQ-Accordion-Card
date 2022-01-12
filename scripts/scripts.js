@@ -15,6 +15,6 @@ for (const question of questionsContainer) {
             question.firstElementChild.firstElementChild.classList.remove("active-state");
             question.firstElementChild.lastElementChild.classList.remove("rotate");
         }
-        console.log(IS_ACTIVE);
+        // console.log(IS_ACTIVE);
     })
 }

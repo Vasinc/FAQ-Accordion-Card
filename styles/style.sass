@@ -125,3 +125,42 @@ main
         //     .answer
         //         padding-top: 1rem
         //         display: block
+
+@media (max-width: 1000px)
+    body
+        main
+            height: auto
+            .container
+                flex-direction: column
+                align-items: center
+                max-height: inherit
+                margin: 8rem 2rem
+                // width: auto
+                .images-container
+                    width: auto
+                    height: 100px
+                    overflow: visible
+                    .woman-desktop
+                        display: none
+                    .bg-desktop
+                        display: none
+                    .image-container__box
+                        display: none
+                    .woman-mobile
+                        display: block
+                        position: relative
+                        top: -100px
+                    .bg-mobile
+                        display: block
+                        position: relative
+                        top: -175px
+                .text-container
+                    width: auto
+                    h1
+                        text-align: center
+                    // .question-answers__container
+                    //     .question-answer__container
+                    //         .question
+                    //             padding: 0 2rem
+                    //         .answer
+                    //             padding: 0 2rem

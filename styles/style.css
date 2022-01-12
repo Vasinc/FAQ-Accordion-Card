@@ -154,4 +154,51 @@ main .container {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
+
+@media (max-width: 1000px) {
+  body main {
+    height: auto;
+  }
+  body main .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    max-height: inherit;
+    margin: 8rem 2rem;
+  }
+  body main .container .images-container {
+    width: auto;
+    height: 100px;
+    overflow: visible;
+  }
+  body main .container .images-container .woman-desktop {
+    display: none;
+  }
+  body main .container .images-container .bg-desktop {
+    display: none;
+  }
+  body main .container .images-container .image-container__box {
+    display: none;
+  }
+  body main .container .images-container .woman-mobile {
+    display: block;
+    position: relative;
+    top: -100px;
+  }
+  body main .container .images-container .bg-mobile {
+    display: block;
+    position: relative;
+    top: -175px;
+  }
+  body main .container .text-container {
+    width: auto;
+  }
+  body main .container .text-container h1 {
+    text-align: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */
